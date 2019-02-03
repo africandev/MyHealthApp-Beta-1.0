@@ -6,7 +6,7 @@
             @include('includes.messages')
 			<div class="col-md-4">
 				<div class="card">
-					<img class="card-img-top" src="{{ env('APP_URL')}}/storage/profile_images/{{ Auth::user()->profile_image }}" alt="ERREUR">
+					<img class="card-img-top" src="{{ env('STORE_URL') }}/profile_images/{{ Auth::user()->profile_image }}" alt="ERREUR">
 					<div class="card-body">
 						<h4 class="card-title mb-3"></h4>
 						<p class="card-text">Changer la photo de profile</p>

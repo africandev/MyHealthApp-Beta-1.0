@@ -52,10 +52,10 @@ class BioMassController extends Controller
           $diet = Diet::where('biomass', '3')->inRandomOrder()->take(1)->get();
         }
         elseif ($result < 18.5) {
-            $diet = Diet::where('biomass', '1')->inRandomOrder()->get(1);
+            $diet = Diet::where('biomass', '1')->inRandomOrder()->take(1)->get();
         }
         else {
-            $diet = Diet::where('biomass', '2')->inRandomOrder()->get(1);
+            $diet = Diet::inRandomOrder()->take(1)->get();
         }
 
         return view('biomass.index')->with(compact('biomasses', 'diet'));

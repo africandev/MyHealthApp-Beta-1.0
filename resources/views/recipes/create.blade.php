@@ -53,6 +53,10 @@
                 <label name="cooking_time">Temps de Cuisson</label>
                 <input name="cooking_time" type="number" class="form-control" />
             </div>
+            <div>
+                    <label name="cooking_time">Pour</label>
+                    <input name="for" type="for" class="form-control" />
+                </div>
             <br>
             <div>
                 <label name="level">Niveau de difficulté</label>
@@ -73,7 +77,7 @@
             </div>
             <div class="form-group">
                 {{Form::label('body', 'Texte')}}
-                {{Form::textarea('body', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Body Text'])}}
+                {{Form::textarea('body', '', ['id' => 'article-ckeditor1', 'class' => 'form-control', 'placeholder' => 'Body Text'])}}
             </div>
             {{Form::submit('Submit', ['class'=>'btn btn-primary'])}}
             {!! Form::close() !!}

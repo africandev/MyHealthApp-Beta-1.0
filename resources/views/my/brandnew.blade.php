@@ -20,7 +20,7 @@
                         <div class="form-group">
                             <div class="card-body">
                                 <div class="mx-auto d-block">
-                                    <img class="rounded-circle mx-auto d-block" src="{{ env('APP_URL')}}/1.jpg" alt="Card image cap"><br>
+                                    <img class="rounded-circle mx-auto d-block" src="{{ env('APP_URL') }}/panel/assets/img/brandnew.jpg" alt="Card image cap"><br>
                                     <div class="location text-sm-center">
                                         {{Form::file('profile_image')}}<br><br>
                                         <i class="fa fa-map-marker"></i> Cliquez ci-dessus</div>

@@ -2,17 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use Form;
+use App\Tip;
+use App\Diet;
+use App\User;
+use App\Recipe;
 use App\BioMass;
 use App\Countries;
 use App\Links\DiseaseRecipe;
-use App\Recipe;
-use App\Tip;
-use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Facades\DB;
-use Form;
 
 class ProfilesController extends Controller
 {
@@ -45,7 +46,42 @@ class ProfilesController extends Controller
                             ->get();
 
         $tip = Tip::inRandomOrder()->take(1)->get();
-        return view ('my.index', compact('recipe', 'biomass', 'tip'));
+
+        $biomasses = BioMass::where('user_id', '=', Auth::user()->id)->orderBy('created_at', 'desc')->paginate(10);
+        $rows = Biomass::where('user_id', '=', Auth::user()->id)->orderBy('created_at', 'desc')->take(1)->get();
+        //Check user's mass unit and converts it if necessary
+        
+        foreach($rows as $row){
+            if(Auth::user()->mass_unit == 'kg'){
+            $mass = $row->mass;
+            }
+            elseif(Auth::user()->mass_unit == 'lb'){
+            $mass = $row->mass * 2.20462;
+            }
+
+            //Check user's height unit and converts it if necessary
+            if (Auth::user()->height_unit == 'm') {
+            $height = $row->height;
+            }
+            elseif(Auth::user()->id == 'in'){
+            $height = $row->height * 39.3701;
+            }
+
+            //Calculates row's BMI (all data is in metric system)
+            $result = $row->mass / ($row->height * $row->height);
+
+            if ($result >= 25.0) {
+            $diet = Diet::where('biomass', '3')->inRandomOrder()->take(1)->get();
+            }
+            elseif ($result < 18.5) {
+                $diet = Diet::where('biomass', '1')->inRandomOrder()->take(1)->get();
+            }
+            else {
+                $diet = Diet::inRandomOrder()->take(1)->get();
+            }
+
+        }
+        return view ('my.index', compact('recipe', 'biomass', 'tip', 'diet'));
     }
 
     public function account() {

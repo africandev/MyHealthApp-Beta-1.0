@@ -25,6 +25,7 @@ class CreateRecipesTable extends Migration
             $table->integer('preparation_time');
             $table->integer('cooking_time');
             $table->string('level');
+            $table->string('for');
             $table->string('cover_image');
             $table->string('small_image');
             $table->timestamps();

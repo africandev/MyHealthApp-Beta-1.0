@@ -11,7 +11,7 @@
                 </li>
                 <li>
                     <a href="/recipes">
-                        <i class="fas fa-utensils"></i>Recettes</a>
+                        <i class="fas fa-cookie"></i>Recettes</a>
                 </li>
                 <li>
                     <a href="/diet">
@@ -69,7 +69,11 @@
                 </li>
                 <li>
                     <a href="/recipes">
-                        <i class="fas fa-utensils"></i>Recettes</a>
+                        <i class="fas fa-cookie"></i>Recettes</a>
+                </li>
+                <li>
+                    <a href="/diet">
+                        <i class="fas fa-utensils"></i>Régimes</a>
                 </li>
                 <li>
                     <a href="/tips">

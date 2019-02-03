@@ -79,8 +79,9 @@ class RecipeSearchController extends Controller
     }
     
     public function bydisease() {
-        $recipes = Recipe::where('disease_id', '=', $_GET['disease'])->get();
-        return $recipes;
+        $type = Disease::where('id', '=', $_GET['disease'])->take(1)->get();
+        $recipes = Recipe::where('type_id', '=', $_GET['disease'])->inRandomOrder()->get();
+        return view('recipes.type')->with(compact('type', 'recipes'));
     }
 
     public function bytype(){

@@ -47,7 +47,7 @@
 							<div class="tab-content pl-3 pt-2" id="nav-tabContent">
 								<div class="tab-pane fade active show" id="custom-nav-home" role="tabpanel" aria-labelledby="custom-nav-home-tab">	
 										@foreach($diet as $diets)
-												<img class="card-img-top" src="{{ env('APP_URL') }}/storage/diet/image/{{ $diets->image }}" alt="Card image cap">
+												<img class="card-img-top" src="{{ env('STORE_URL') }}/diet/image/{{ $diets->image }}" alt="Card image cap">
 												<div class="card-body">
 														<h4 class="card-title mb-3">
 															<a href="{{ env('APP_URL') }}/diet/{{ $diets->id }}" >{{ $diets->name }}</a>
@@ -60,7 +60,7 @@
 									@foreach($diet as $diet)
 									<div class="col-sm-6 col-lg-4">
 										<div class="card">
-											<img class="card-img-top" src="{{ env('APP_URL') }}/storage/diet/image/{{ $diet->image }}" alt="Card image cap">
+											<img class="card-img-top" src="{{ env('STORE_URL') }}/diet/image/{{ $diet->image }}" alt="Card image cap">
 											<div class="card-body">
 													<h4 class="card-title mb-3">
 														<a href="{{ env('APP_URL') }}/diet/{{ $diet->id }}" >{{ $diet->name }}</a>

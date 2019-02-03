@@ -11,7 +11,7 @@
                 </div>
                 <div class="card-body">
                     <div class="chart-area">
-                        <img src="{{ env('APP_URL') }}/storage/content/recipes/cover_image/{{ $recipe->cover_image }}">
+                        <img src="{{ env('STORE_URL') }}/content/recipes/cover_image/{{ $recipe->cover_image }}">
                     </div>
                 </div>
             </div>

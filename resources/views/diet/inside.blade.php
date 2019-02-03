@@ -8,7 +8,7 @@
                     <h5>Petite Description</h5>
                     <p>{!! $diet->short !!}</p>
                     </div>
-                    <img class="card-img-top" src="{{ env('APP_URL') }}/storage/diet/image/{{ $diet->image }}" alt="Card image cap">
+                    <img class="card-img-top" src="{{ env('STORE_URL') }}/diet/image/{{ $diet->image }}" alt="Card image cap">
                   </div>
                 
             </div>
@@ -32,19 +32,19 @@
                         <h5>Les Etapes du Régime <a href="{{ env('APP_URL') }}/diet/{{ $diet->id }}/steps">(Cliquez pour checklist complete)</a></h5>
                         <br>
                         <h6>Les Etapes faites</h6>
-                        @foreach($stepuser as $row)
+                        @foreach($stepuser as $step)
                         <p>
-                            <a href="https://google.com">
-                            <span class="badge badge-success"><i class="fa fa-check"></i></span>
-                            </a>
-                            <b>{{ $row->name }}</b> : {{ $row->body }}
+                            
+                                <input type="hidden" value="{{ $step->id }}" name="step"/>
+                                <button class="badge badge-success"><i class="fa fa-check"></i></button>
+                                <b>{{ $step->name }}</b> : {{ substr($step->body,0,40)  }}...
                         </p>
                         @endforeach
                         <br>
-                        <h6>Toutes Les Etapes</h6>
+                        <h6>Les Etapes Restantes</h6>
                         @foreach($stepall as $step)
                         <p>
-                            <form method="POST" action="{{ env('APP_URL') }}/diet/addsteptouser" enctype="multipart/form-data">
+                            <form method="POST" action="{{ env('APP_URL') }}/diet/addsteptouser?step={{ $step->id }}" enctype="multipart/form-data">
                                 @csrf  
                                 <input type="hidden" value="{{ $step->id }}" name="step"/>
                                 <button class="badge badge-danger"><i class="fa fa-check"></i></button>

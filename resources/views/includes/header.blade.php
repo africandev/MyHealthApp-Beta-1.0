@@ -10,14 +10,11 @@
                 <div class="header-wrap">
 
                     <form class="form-header" action="" method="POST">
-                        <input class="au-input au-input--xl" type="text" name="search" placeholder="Chercher quelque chose..." />
-                        <button class="au-btn--submit" type="submit">
-                            <i class="zmdi zmdi-search"></i>
-                        </button>
+                        <h4>Web Client</h4>
                     </form>
 
                     <div class="header-button">
-                        <div class="noti-wrap">
+                        <!--<div class="noti-wrap">
                             <div class="noti__item js-item-menu">
                                 <i class="zmdi zmdi-comment-more"></i>
                                 <span class="quantity">1</span>
@@ -118,13 +115,13 @@
                                 </div>
                             </div>
 
-                        </div>
+                        </div>-->
 
                         <div class="account-wrap">
 
                             <div class="account-item clearfix js-item-menu">
                                 <div class="image">
-                                    <img src="{{ env('APP_URL') }}/storage/profile_images/{{ Auth::user()->profile_image }}" alt="ERROR" />
+                                    <img src="{{ env('STORE_URL') }}/profile_images/{{ Auth::user()->profile_image }}" alt="ERROR" />
                                 </div>
                                 <div class="content">
                                     <b>{{ Auth::user()->firstname }} {{ Auth::user()->lastname }}</b>

@@ -3,15 +3,17 @@
 
 <head>
     <!-- Required meta tags-->
+    <title>MyHealthApp</title>
+    <link rel="icon" href="https://maghnet.tk/favicon.png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="au theme template">
-    <meta name="author" content="Hau Nguyen">
-    <meta name="keywords" content="au theme template">
+    <meta name="author" content="Achraf Ghellach">
+    <meta name="keywords" content="maghnet, maghnet.tk, lifesum, php, laravel, application, myhealthapp, MyHealthApp, mYhEALTHaPP, MYHEALTHAPP, LifeSum, Lifesum ,
+    Myhealthapp, health.maghnet.tk">
 
     <!-- Title Page-->
-    <title>MyHealthApp</title>
-    <link rel="icon" href="{{ env('APP_URL') }}/home/img/favicon.png" />
+    
 
     <!-- Fontfaces CSS-->
     <link href="{{ env('APP_URL') }}/panel/css/font-face.css" rel="stylesheet" media="all">

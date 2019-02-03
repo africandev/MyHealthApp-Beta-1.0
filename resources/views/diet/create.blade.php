@@ -61,8 +61,9 @@
         <hr>
         <h1>Add Step</h1>
         <div class="card-body">
-            <form action="{{ env('APP_URL') }}/diet/addstep" method="GET" enctype="multipart/form-data" >
-            <div class="form-group">
+            <form action="{{ env('APP_URL') }}/diet/addstep" method="POST" enctype="multipart/form-data" >
+            @csrf
+                <div class="form-group">
                 <label for="name" class="control-label mb-1">
                     Nom
                 </label>

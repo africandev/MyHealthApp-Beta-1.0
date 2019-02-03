@@ -15,7 +15,7 @@
         @foreach($recipes as $recipe)
         <div class="col-sm-6 col-lg-4">
             <div class="card">
-                <img class="card-img-top" src="{{ env('APP_URL') }}/storage/recipes/cover_image/{{ $recipe->cover_image }}" alt="Card image cap">
+                <img class="card-img-top" src="{{ env('STORE_URL') }}/recipes/cover_image/{{ $recipe->cover_image }}" alt="Card image cap">
                 <div class="card-body">
                         <h4 class="card-title mb-3">
                             <a href="{{ env('APP_URL') }}/recipe/{{ $recipe->id }}" >{{ $recipe->title }}</a>
@@ -28,7 +28,7 @@
         @foreach($other_recipes as $recipe)
         <div class="col-sm-6 col-lg-4">
             <div class="card">
-                <img class="card-img-top" src="{{ env('APP_URL') }}/storage/recipes/cover_image/{{ $recipe->cover_image }}" alt="Card image cap">
+                <img class="card-img-top" src="{{ env('STORE_URL') }}/recipes/cover_image/{{ $recipe->cover_image }}" alt="Card image cap">
                 <div class="card-body">
                         <h4 class="card-title mb-3">
                             <a href="{{ env('APP_URL') }}/recipe/{{ $recipe->id }}" >{{ $recipe->title }}</a>

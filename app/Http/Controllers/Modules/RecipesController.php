@@ -145,7 +145,7 @@ class RecipesController extends Controller
             // Filename to store
             $fileNameToStoreb= $filenameb.'_'.time().'.'.$extensionb;
             // Upload Image
-            $pathb = $request->file('small_image')->storeAs('public/storage/cover_images/content/recipes/small_image', $fileNameToStoreb);
+            $pathb = $request->file('small_image')->storeAs('public/recipes/small_image', $fileNameToStoreb);
         } else {
             $fileNameToStoreb = 'nosmallimage.jpg';
         }
@@ -158,6 +158,7 @@ class RecipesController extends Controller
         $recipe->body = $request->input('body');
         $recipe->disease_id = $request->input('disease_id');
         $recipe->biomass = $request->input('biomass');
+        $recipe->for = $request->input('for');
         $recipe->type_id = $request->input('type_id');
         $recipe->preparation_time = $request->input('preparation_time');
         $recipe->cooking_time = $request->input('cooking_time');
@@ -214,7 +215,7 @@ class RecipesController extends Controller
             // Filename to store
             $fileNameToStore= $filename.'_'.time().'.'.$extension;
             // Upload Image
-            $path = $request->file('cover_image')->storeAs('public/storage/cover_images/content/recipes/cover_image', $fileNameToStore);
+            $path = $request->file('cover_image')->storeAs('public/recipes/cover_image', $fileNameToStore);
         }
 
         if($request->hasFile('small_image')){
@@ -227,7 +228,7 @@ class RecipesController extends Controller
             // Filename to store
             $fileNameToStoreb= $filenameb.'_'.time().'.'.$extensionb;
             // Upload Image
-            $pathb = $request->file('small_image')->storeAs('public/storage/cover_images/content/recipes/small_image', $fileNameToStoreb);
+            $pathb = $request->file('small_image')->storeAs('public/recipes/small_image', $fileNameToStoreb);
         }
 
         // Create Recipe

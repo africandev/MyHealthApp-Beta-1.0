@@ -13,7 +13,7 @@
                     <h5>Petite Description</h5>
                     <p>{!! $diet->short !!}</p>
                     </div>
-                    <img class="card-img-top" src="{{ env('APP_URL') }}/storage/diet/image/{{ $diet->image }}" alt="Card image cap">
+                    <img class="card-img-top" src="{{ env('STORE_URL') }}/diet/image/{{ $diet->image }}" alt="Card image cap">
                   </div>
                 
             </div>

@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('frontpage');
 });
 
+Route::get('test', function () {
+    return env('STORE_URL');
+});
+
 //Authentification Routes
 Auth::routes();
 Route::get('/redirect', 'Auth\SocialAuthFacebookController@redirect');

@@ -5,12 +5,12 @@
     <div class="row">
         <div class="col-sm-6 col-lg-4">
             <div class="card">
-                    <img src="{{ env('APP_URL') }}/storage/recipes/cover_image/{{ $recipe->cover_image }}">
+                    <img src="{{ env('STORE_URL') }}/recipes/cover_image/{{ $recipe->cover_image }}">
                 <div class="card-body">
                     <h4 class="card-title mb-3">
                         {{ $recipe->title }}
                     </h4>
-                    <img src="{{ env('APP_URL') }}/storage/recipes/small_image/{{ $recipe->small_image }}">
+                    <img src="{{ env('STORE_URL') }}/recipes/small_image/{{ $recipe->small_image }}">
                 </div>
             </div>
         </div>
@@ -34,12 +34,15 @@
                     <div class="card-body">
                         <div class="chart-area">
                                 <div class="card-body card-block">
-                                <h2>Ingrédients</h2><p>Utilisez les cases pour cocher les ingrédients</p>
+                                <h2>Intro</h2>
+                                <p>{{ $recipe->headline }}</p><br>
+                                <!--<h2>Ingrédients ({{ $recipe->for }})</h2>
+                                <p>Utilisez les cases pour cocher les ingrédients</p>
                                 <p>
                                     @foreach ($ingredients as $ingredient)
                                     <input type="checkbox" class="form-check-input"><b>{{ $ingredient->name }}</b> {{ $ingredient->quantity }}<br>
                                     @endforeach
-                                </p>
+                                </p>-->
                                 <br>
                                 <p>{!!$recipe->body!!}</p>
                             </div>

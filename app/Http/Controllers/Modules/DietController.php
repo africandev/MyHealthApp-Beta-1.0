@@ -111,12 +111,14 @@ class DietController extends Controller
         $stepall = StepsUser::where('diet_id', '=', $id)
                             ->where('user_id', '=', Auth::user()->id)
                             ->where('completed', '0')
+                            ->orderBy('id', 'asc')
                             ->get();
 
         //Get none-done Steps from Diet
         $stepuser = StepsUser::where('diet_id', '=', $id)
                             ->where('user_id', '=', Auth::user()->id)
                             ->where('completed', '1')
+                            ->orderBy('id', 'asc')
                             ->get();
 
         $diet1 = $user->diets()->where('diet_id', '=', $id)->distinct()->get();

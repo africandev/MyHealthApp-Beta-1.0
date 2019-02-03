@@ -24,7 +24,7 @@
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" 
     crossorigin="anonymous">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="assets/img/icon/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="https://maghnet.tk/favicon.png">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -77,17 +77,18 @@
                 <div class="row">
                     <div class="slider-inner text-left">
                         <h2><i class="fas fa-stethoscope"></i> MyHealthApp</h2><br>
-                        <h4><i class="fas fa-arrow-right"></i> Perdez du poids</h5>
-                        <h4><i class="fas fa-arrow-right"></i> Magex mieux</h5>
-                        <h4><i class="fas fa-arrow-right"></i> Vivez mieux</h5><br>
-                        <a class="expand-video" href="https://www.youtube.com/watch?v=8qs2dZO6wcc"><i class="fa fa-play"></i>Watch the video</a>
+                        <h4><i class="fas fa-check"></i> Perdez du poids</h5>
+                        <h4><i class="fas fa-check"></i> Magez mieux</h5>
+                        <h4><i class="fas fa-check"></i> Vivez mieux</h5><br>
+                        <img width="50%" src="https://play.google.com/intl/en_us/badges/images/generic/fr_badge_web_generic.png" />
+                        <img width="44%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1280px-Download_on_the_App_Store_Badge.svg.png" />
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-sm-6 hidden-xs">
                 <div class="row">
                     <div class="slider-img">
-                        <img src="assets/img/mobile/slider-left-img.png" alt="slider image">
+                        <img src="assets/img/mobile/slider.png" alt="slider image">
                     </div>
                 </div>
             </div>
@@ -138,54 +139,54 @@
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="ft-content rtl">
                         <div class="ft-single">
-                            <img src="assets/img/icon/feature/1.png" alt="icon">
+                            <img src="https://lifesum.com/media/usps/food.52f1575f.png" width="15%" alt="icon">
                             <div class="meta-content">
                                 <h2>Recettes</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, iumod tempor incididunt</p>
+                                <p>Miammmmmmmm — nous avons de délicieuses recettes pour tous les goûts et toutes les occasions ! Et elles sont bonnes. VRAIMENT bonnes !</p>
                             </div>
                         </div>
                         <div class="ft-single">
-                            <img src="assets/img/icon/feature/2.png" alt="icon">
+                            <img src="https://lifesum.com/media/usps/scale.324d2522.png" width="15%" alt="icon">
                             <div class="meta-content">
-                                <h2>Unique Design</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, iumod tempor incididunt</p>
+                                <h2>Détection de la progression du poids</h2>
+                                <p>Aucun glucide n'échappera à nos fonctions de détection.</p>
                             </div>
                         </div>
                         <div class="ft-single">
-                            <img src="assets/img/icon/feature/3.png" alt="icon">
+                            <img src="assets/img/icon/icons/all.png" width="15%" alt="icon">
                             <div class="meta-content">
-                                <h2>Voice Maker</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, iumod tempor incididunt</p>
+                                <h2>Android, IOS et Web</h2>
+                                <p>Accedez à vos données sur tous vos appareils</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 hidden-sm col-xs-12">
                     <div class="ft-screen-img">
-                        <img src="assets/img/mobile/ft-screen-img.png" alt="image">
+                        <img src="assets/img/mobile/phone.png" alt="image">
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="ft-content">
                         <div class="ft-single">
-                            <img src="assets/img/icon/feature/4.png" alt="icon">
+                            <img src="https://lifesum.com/media/usps/rocket.4a0b9992.png" width="15%" alt="icon">
                             <div class="meta-content">
-                                <h2>Easy Settings</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, iumod tempor incididunt</p>
+                                <h2>Régime 5kilos-2</h2>
+                                <p>Perte de poids importante avec notre régime de 2 semaines, complété par des listes de courses et la planification des repas.</p>
                             </div>
                         </div>
                         <div class="ft-single">
-                            <img src="assets/img/icon/feature/5.png" alt="icon">
+                            <img src="assets/img/icon/icons/secure.png" width="15%"alt="icon">
                             <div class="meta-content">
-                                <h2>Flat Design</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, iumod tempor incididunt</p>
+                                <h2>Sécurisé</h2>
+                                <p>Nos systèmes sont à la pointe de la technologie. Vos données personnelles doivent être protégées.</p>
                             </div>
                         </div>
                         <div class="ft-single">
-                            <img src="assets/img/icon/feature/6.png" alt="icon">
+                            <img src="https://lifesum.com/media/usps/sync.de882bcd.png" width="15%" alt="icon">
                             <div class="meta-content">
-                                <h2>Easy Download</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, iumod tempor incididunt</p>
+                                <h2>Gratuit</h2>
+                                <p>Simple, facile et gratuit, pour la vie</p>
                             </div>
                         </div>
                     </div>
@@ -198,61 +199,19 @@
     <div class="testimonial-area ptb--100">
         <div class="container">
             <div class="section-title">
-                <h2>Client Says</h2>
-                <p>Nemo enim ipsam voluptatem quia voluptas sit</p>
+                <h2>Ce que disent nos utilisateurs</h2>
+                <p>Votre avis est important</p>
             </div>
             <div class="testimonial-slider owl-carousel">
                 <div class="single-tst">
                     <img src="assets/img/author/tst-author1.jpg" alt="author">
-                    <h4>John Doe</h4>
-                    <span>Founder</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
-                    <ul class="tst-social">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                        <li><a href="#"><i class="fa fa-ponterest"></i></a></li>
-                    </ul>
+                    <h4>Mostafa</h4>
+                    <p>Avec le régime 5kilos-2 de MyHealthApp, j'ai appris qu'on a pas besoin de souffrir pour perdre du poids. </p>
                 </div>
                 <div class="single-tst">
                     <img src="assets/img/author/tst-author2.jpg" alt="author">
-                    <h4>John Doe</h4>
-                    <span>CEO</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
-                    <ul class="tst-social">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                        <li><a href="#"><i class="fa fa-ponterest"></i></a></li>
-                    </ul>
-                </div>
-                <div class="single-tst">
-                    <img src="assets/img/author/tst-author1.jpg" alt="author">
-                    <h4>John Doe</h4>
-                    <span>CEO</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
-                    <ul class="tst-social">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                        <li><a href="#"><i class="fa fa-ponterest"></i></a></li>
-                    </ul>
-                </div>
-                <div class="single-tst">
-                    <img src="assets/img/author/tst-author2.jpg" alt="author">
-                    <h4>John Doe</h4>
-                    <span>CEO</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
-                    <ul class="tst-social">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                        <li><a href="#"><i class="fa fa-ponterest"></i></a></li>
-                    </ul>
+                    <h4>Fatima</h4>
+                    <p>Avec les recettes que j'ai trouvé sur MyHealthApp, j'ai pu équilibrer ma nutrition, avec des repas succulents.</p>
                 </div>
             </div>
         </div>
@@ -260,32 +219,25 @@
     <div class="achivement-area ptb--100">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-3 col-xs-12">
-                    <div class="ach-single">
-                        <div class="icon"><i class="fa fa-users"></i></div>
-                        <p><span class="counter">10</span>k</p>
-                        <h5>Happy Clients</h5>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="ach-single">
                         <div class="icon"><i class="fa fa-book"></i></div>
-                        <span class="counter">978</span>
-                        <h5>Projects complet</h5>
+                        <span class="counter">3</span>
+                        <h5>Regimes</h5>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-3 col-xs-12">
-                    <div class="ach-single">
-                        <div class="icon"><i class="fa fa-coffee"></i></div>
-                        <p><span class="counter">150</span>k</p>
-                        <h5>Cups of coffee</h5>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="ach-single">
                         <div class="icon"><i class="fa fa-trophy"></i></div>
-                        <span class="counter">100</span>
-                        <h5>Winning awards</h5>
+                        <span class="counter">1</span>
+                        <h5>Application de folie !!!</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="ach-single">
+                        <div class="icon"><i class="fa fa-coffee"></i></div>
+                        <p><span class="counter">250</p>
+                        <h5>Recettes</h5>
                     </div>
                 </div>
             </div>

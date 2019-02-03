@@ -293,7 +293,7 @@ END Header Area
 .slider-inner h2 {
     font-size: 48px;
     font-weight: 500;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 14, 143);
     letter-spacing: 0;
     line-height: 49px;
 }
@@ -306,6 +306,10 @@ END Header Area
     line-height: 39px;
     margin-bottom: 50px;
     margin-top: 5px;
+}
+
+.slider-inner i {
+    color: rgb(218, 0, 0);
 }
 
 .slider-inner a {

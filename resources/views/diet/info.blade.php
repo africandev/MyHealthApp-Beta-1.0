@@ -7,7 +7,7 @@
                 <div class="card-header">
                     <div class="card-body">
                     <h5>Petite Description</h5>
-                    <p>{{ $diet->short }}</p>
+                    <p>{!! $diet->short !!}</p>
                     </div>
                 </div>
             </div>
@@ -26,7 +26,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="chart-area">
-                        <p>{{ $diet->body }}</p>
+                        <p>{!! $diet->body !!}</p>
                     </div>
                 </div>
             </div>
